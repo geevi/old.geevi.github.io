@@ -36,11 +36,33 @@ body {
 		padding-left: 40px;
 
 	}
+	
+	.Content-container {
+		max-width: 700px; 
+		padding: 10px 50px;
+		box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+		background: white;
+	}
+}
+
+@media screen and (max-width: 851px) {
+	.Content-container  {
+		background: white;
+		padding: 10px 10px;
+		margin: 0;
+	}
 }
 
 
-.Content-container {
-	max-width: 600px; 
+
+.Content-container h3 {
+	font-weight: 700;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #5DD7F4;
+	text-align: center;
+	border-bottom: 1px dotted gray;
+	margin-bottom: 20px;
 }
 
 .Layout-title a {
@@ -70,11 +92,16 @@ body {
 	margin-right: 50px;
 }
 
-h3 {
+h3 a,h3 {
 	font-weight: 200;
 	padding-top: 10px;
-	padding-bottom: 5px;
+	padding-bottom: 10px;
 	color: rgb(174, 37, 37);
+	text-decoration: none;
+}
+
+h3 a:hover {
+	text-decoration: underline;
 }
 
 h4 {
