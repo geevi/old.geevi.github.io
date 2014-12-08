@@ -15,12 +15,9 @@
  */
 
  @import "../styleguide/layout/layout";
-  @import "../styleguide/card/card";
+ @import "../styleguide/card/card";
+ @import '../styleguide/typography/typography';
 
-
-main {
-  padding: 20px;
-}
 
 body {
 	margin: 0;
@@ -30,7 +27,7 @@ body {
 
 .Layout-content {
 	background: #fafafa;
-	padding: 40px 20px 20px 40px;
+	padding: 40px 10px 20px 10px;
 }
 
 @media screen and (min-width: 851px) {
@@ -40,7 +37,6 @@ body {
 
 	}
 }
-
 
 
 .Content-container {
@@ -53,12 +49,15 @@ body {
 	text-decoration: none;
 }
 
-/*
-.Layout-drawer .Layout-navigation li a {
-	font-weight: 300;
-	color: #424242;
-	text-decoration: none;
-}*/
+.Layout-drawerButton {
+	background: white;
+	margin: 0px;
+	padding: 8px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.23);
+	border-radius: 10px;
+	color: Green;
+}
+
 
 .Layout-drawer {
 	width: 200px;
@@ -66,8 +65,22 @@ body {
 	background: white;
 }
 
+.Card-container {
+	display: inline-block;
+	margin-right: 50px;
+}
+
+h3 {
+	font-weight: 200;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	color: rgb(174, 37, 37);
+}
+
 h4 {
 	color: #ff5252;
+	padding-top: 10px;
+	padding-bottom: 5px;
 }
 
 h5 {
@@ -77,6 +90,8 @@ h5 {
 	text-align: center;
 	text-transform: uppercase;
 	text-decoration: underline;
+		padding-top: 8px;
+	padding-bottom: 4px;
 	
 }
 
@@ -86,7 +101,7 @@ h5 {
 	margin-top: 0px;
 	float: left;
 	width: 100%;
-	max-width: 330px;
+	max-width: 300px;
 	min-width: 270px;
 	border-radius: 2px;
 }
@@ -118,4 +133,7 @@ h5 {
 .Card-bottom a {
 	border: 0px;
 	width: auto;
+	font-weight: 700;
+	color: green;
+	text-decoration: underline;
 }
