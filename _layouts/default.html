@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="">
+
+	{% include head.html %}
+
+	<body>
+	
+	<div class="Layout Layout--fixedDrawer Layout--overlayDrawerButton">
+	
+		{% include nav.html %}
+		<div class="Layout-content">
+
+			
+				{{ content }}
+
+		</div>
+	
+		<div class="Layout-obfuscator"></div>
+	
+	</div>
+    
+    {% include footer.html %}
+  </body>
+</html>
+
