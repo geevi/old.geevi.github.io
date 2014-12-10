@@ -39,10 +39,16 @@ body {
 	
 	.Content-container {
 		max-width: 700px; 
-		padding: 10px 50px;
+
 		box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
 		background: white;
 	}
+	
+	
+	.Card-container {
+		margin-right: 30px;
+	}
+	
 }
 
 @media screen and (max-width: 851px) {
@@ -51,6 +57,8 @@ body {
 		padding: 10px 10px;
 		margin: 0;
 	}
+	
+	
 }
 
 
@@ -89,7 +97,7 @@ body {
 
 .Card-container {
 	display: inline-block;
-	margin-right: 50px;
+	margin-bottom: 30px;
 }
 
 h3 a,h3 {
@@ -123,14 +131,12 @@ h5 {
 }
 
 .Card {
-	margin: 20px;
-	margin-left: 0px;
-	margin-top: 0px;
 	float: left;
 	width: 100%;
 	max-width: 300px;
 	min-width: 270px;
 	border-radius: 2px;
+	margin: 10px;
 }
 
 
