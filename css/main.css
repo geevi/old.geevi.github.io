@@ -1,0 +1,262 @@
+html,body {
+    height: 100%;
+    margin: 0;
+    background-color: #F4F4F4;
+    font-family: 'RobotoDraft', sans-serif;
+}
+  
+#sideHeaderPanel {
+	border-right:0;
+	background:  white;
+	border-right: 1px solid #e0e0e0;
+}
+
+#sideHeaderPanel core-toolbar {
+	background: #4285f4;
+}
+
+
+#sideHeaderPanel paper-item a {
+	text-decoration: none;
+	color: rgb(66, 66, 66);
+	padding-left: 20px;
+}
+
+#mainHeaderPanel {
+	height: 100%;
+}
+
+
+.title a {
+	color: white;
+	text-decoration: none;
+	padding-left: 20px;
+}
+
+
+#card-container {
+	overflow-y: scroll;
+	height: 100%;
+	margin-bottom: 100px;
+
+}
+
+.Field-container {
+	display: inline-block;
+	padding: 10px;
+}
+
+.Field-container .links {
+	display: block;
+	text-align: center;
+	height: 20px;
+}
+
+h3 {
+	font-weight: 200;
+	padding: 5px;
+	margin: 0;
+	color: #ae2525;
+	font-size: 34px;
+	line-height: 40px;
+	text-align: center;
+}
+
+
+
+.card {
+	display: inline-block;
+	background: white;
+	box-sizing: border-box;
+	width: 300px;
+	height: 600px;
+	margin: 10px;
+	border-radius: 2px;
+	float: left;
+}
+
+
+.Card-heading {
+	width: 300px;
+	background: #1976d2;
+	color: white;
+	font-size: 24px;
+	height: 96px;
+	line-height: normal;
+	text-decoration: none solid white;
+}
+
+.Card-heading span {
+	display: block;
+	padding: 5px 10px;
+}
+
+.Card-caption {
+	background: #1976d2;
+	color: white;
+	font-size: 12px;
+	height: 16px;
+	line-height: normal;
+	padding: 8px 0px;
+	width: 100%;
+}
+
+.Card-caption span {
+	display: block;
+	padding: 0px 10px;
+	float: right;
+}
+
+.Card-imgContainer {
+	background: transparent;
+	height: 150px;
+	width: 300px;
+	overflow: hidden;
+}
+
+.Card-lower {
+	height: 244px;
+	font-size: 12px;
+	line-height: 16px;
+	margin: 10px ;
+	overflow: hidden;
+}
+
+.Card-lower .coauthors {
+	display: block;
+	font-style: italic;
+	padding-bottom: 5px;
+}
+
+.nopic .Card-lower {
+	height: 400px;
+}
+
+
+.Card-bottom {
+	border-top: 1px solid #ebebeb;
+	font-size: 16px;
+	min-height: 50px;
+	max-height: 100px;
+	line-height: normal;
+	width: 100%;
+	position: absolute;
+	bottom:0px;
+	
+}
+
+.Card-bottom span {
+
+	padding-left: 15px;
+	font-size: 13px;
+	font-weight: normal;
+	height: 50px;
+	line-height: 50px;
+}
+
+.Card-bottom a {
+	text-decoration: underline;
+
+	cursor: pointer;
+
+}
+
+#Hardness h3 {
+	color: #CD2121;
+}
+
+#Hardness a {
+	color: #CD2121;
+}
+
+
+#Hardness .Card-heading {
+	background: #CD2121;
+}
+
+#Hardness .Card-caption {
+	background: #CD2121;
+}
+
+#Game-theory h3 {
+	color: #9c27b0;
+}
+#Game-theory a {
+	color: #9c27b0;
+}
+
+
+#Game-theory .Card-heading {
+	background: #9c27b0;
+}
+
+#Game-theory .Card-caption {
+	background: #9c27b0;
+}
+
+
+#Bio h3 {
+	color: #0f9d58;
+}
+
+
+#Bio a {
+	color: #0f9d58;
+}
+
+
+#Bio .Card-heading {
+	background: #0f9d58;
+}
+
+#Bio .Card-caption {
+	background: #0f9d58;
+}
+
+
+
+#Streaming h3 {
+	color: #1976d2;
+}
+
+#Streaming a {
+	color: #1976d2;
+}
+
+
+#Streaming .Card-heading {
+	background: #1976d2;
+}
+
+#Streaming .Card-caption {
+	background:#1976d2;
+}
+
+.content-card {
+	display: inline-block;
+	background: white;
+	box-sizing: border-box;
+	max-width: 800px;
+	margin: 16px;
+	padding: 16px;
+	border-radius: 2px;
+	margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+.element-label {
+height: 80px;
+line-height: 80px;
+padding-left: 24px;
+background-color: #fff;
+letter-spacing: 0.05em;
+font-size: 24px;
+font-weight: 400;
+color: #5265a2;
+}
+

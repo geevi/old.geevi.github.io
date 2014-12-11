@@ -3,23 +3,31 @@
 
 	{% include head.html %}
 
-	<body>
+	<body unresolved>
 	
-	<div class="Layout Layout--fixedDrawer Layout--overlayDrawerButton">
+	<core-drawer-panel drawerWidth="200px" responsiveWidth="900px" touch-action>
 	
-		{% include nav.html %}
-		<div class="Layout-content">
+	{% include nav.html %}
+	    
+		<core-header-panel id="mainHeaderPanel" main mode="waterfall-tall" tallclass="medium-tall">
+		
+		
+				<paper-icon-button core-drawer-toggle class="menuButton" icon="menu" role="button" tabindex="0" aria-label="menu"></paper-icon-button>		
 
-			
+		
+			<div id="card-container">
+
 				{{ content }}
 
-		</div>
-	
-		<div class="Layout-obfuscator"></div>
-	
-	</div>
-    
-    {% include footer.html %}
-  </body>
+			</div>
+		  
+		</core-header-panel>
+
+		  
+	</core-drawer-panel>
+
+	{% include footer.html %}
+   
+	</body>
 </html>
 
