@@ -1,3 +1,2 @@
 Use Jekyll.
 
-  b
