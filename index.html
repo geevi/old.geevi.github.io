@@ -2,149 +2,207 @@
 layout: default
 ---
 
+<<<<<<< HEAD
 <div class="Card-container">
 <h3><a href="/research/hardness-of-coloring.html">Hardness of<br/> Approximation </a></h3> 
 <span style="display: block; text-align: center"><a href="https://www.dropbox.com/s/1ksyr95lpvc4m8a/poster.pdf?dl=0">poster</a> | <a href="https://www.dropbox.com/s/9c41cvk5bbxdvwd/synopsis.pdf?dl=0">article</a> |  <a href="https://www.dropbox.com/s/qmhr7vpbivce0ha/slides.pdf?dl=0">slides</a> | thesis - <a href="http://www.phdcomics.com/comics.php?f=1139">hopefully soon</a></span><br/>
 <div class="Card Shadow--z1">
+=======
+<div class="Field-container" id="Hardness">
+<h3>Hardness of Approximation</h3>
+<span class="links"><a href="https://www.dropbox.com/s/1ksyr95lpvc4m8a/poster.pdf?dl=0">poster</a> | <a href="https://www.dropbox.com/s/9c41cvk5bbxdvwd/synopsis.pdf?dl=0">article</a> |  <a href="https://www.dropbox.com/s/qmhr7vpbivce0ha/slides.pdf?dl=0">slides</a> | thesis - <a href="http://www.phdcomics.com/comics.php?f=1139">hopefully soon</a></span>
+<paper-shadow class="card" z="1">
+>>>>>>> polymer
        
     <div class="Card-heading">
          <span>Hardness of Graph Coloring</span>
     </div>
     <div class="Card-caption">
-        October, 2014
+        <span>October, 2014</span>
     </div>
-    	<div class="Card-imgContainer">
-	      <img src="/images/highlight/graph_coloring.png">
-	</div>
+    <div class="Card-imgContainer">
+		<img src="/images/highlight/graph_coloring.png">
+    </div>
+    	
     <div class="Card-lower">
-       In joint work with Irit Dinur, Prahladh Harsha, Srikanth Srinivasan [DHSV14], we show that
+    	<span class="coauthors">Joint work with Irit Dinur, Prahladh Harsha and Srikanth Srinivasan [DHSV14].</span>
+       We show that
 assuming a version of UGC, given a (almost) $3$-colorable graph, no efficient algorithm can find a $2^{poly(\log \log n)}$-coloring. This is 
 an improvement over $C=poly(\log \log n)$ hardness result of Dinur and Shinkar, using similar assumtions.
     </div>
     <div class="Card-bottom">
-         <a href="http://arxiv.org/abs/1411.3517">DHSV14</a>
+         <span>DHSV14: <a href="http://arxiv.org/abs/1411.3517">arXiv</a>  |  STACS'15</span>
     </div>
-</div>
+</paper-shadow>
     
     
-<div class="Card Shadow--z1">
+<paper-shadow class="card">
 
     <div class="Card-heading">
 		<span>Hardness of Hypergraph Coloring</span>
     </div>
     <div class="Card-caption">
-		March, 2014
+		 <span>March, 2014</span>
 	</div>
 		<div class="Card-imgContainer">
 		<img src="/images/highlight/hypergraph_coloring.png">
     </div>
     <div class="Card-lower">
+    <span class="coauthors">Joint work with  Venkatesh Guruswami, Johan Hastad, Prahladh Harsha, Srikanth Srinivasan [GHHSV14] and [V14].</span> 
       For the problem of $C$-coloring a $4$-colorable $4$-uniform hypergraph,
-       we show that no efficient algorithm can guarantee $C=2^{(\log n)^{1/19}}$. This is an improvement over $C=poly(\log n)$. The final result is obtained using the quadratic outer verifier of Khot and Saket. 
+       we show that no efficient algorithm can guarantee $C=2^{(\log n)^{1/19}}$, an improvement over $C=poly(\log n)$. First the result was shown for a super-polylogarithmic $C$. Subsequently Subhash Khot and Rishi Saket proved a result for $C=2^{(\log n)^{1/18}}$, but only for $12$-uniform hypergraphs. I observed that by combining the methods, the same result can be obtained for $4$-colorable $4$-uniform hypergraphs.
       </div>
 	<div class="Card-bottom">
+<<<<<<< HEAD
          <a href="http://arxiv.org/abs/1311.7407">GHHSV14</a>  <a href="http://arxiv.org/abs/1408.0262v3">V14</a> <a href="https://www.dropbox.com/s/96b6qyamb6tlaw7/slides.pdf?dl=0">Slides</a>
+=======
+         <span>GHHSV14: <a href="http://arxiv.org/abs/1311.7407">arXiv</a> | <a href="http://dl.acm.org/citation.cfm?id=2591882">STOC'14</a> | <a href="https://www.dropbox.com/s/96b6qyamb6tlaw7/slides.pdf?dl=0">slides</a></span><span>
+         V14: <a href="http://arxiv.org/abs/1408.0262v3">arXiv</a>
+         </span>
+>>>>>>> polymer
 	</div>
-</div>
+</paper-shadow>
     
     
-<div class="Card Card-nopic Shadow--z1">
+<paper-shadow class="card nopic">
      
 	<div class="Card-heading">
     	<span>A characterization of hard-to-cover CSPs</span>
 	</div>
     <div class="Card-caption">
-        November, 2014
+         <span>November, 2014 </span>
 	</div>
     <div class="Card-lower">
-       In joint work with Amey Bhangale and Prahladh Harsha [BHV14], we show that no efficient algorithm can approximate the covering problem for any non-odd predicate within any constant. This leads to a complete characterization of hard-to-cover predicates as odd-predicates are always coverable by an
-       assignment and its complement.
+       <span class="coauthors">Joint work with Amey Bhangale and Prahladh Harsha [BHV14].</span>
+    The covering number of a CSP instance, is the smallest number of assignments
+  to the variables, such that each constraint is
+  satisfied by at least one of the assignments. We show the following
+  results:  <br/> 
+  <br/> - Assuming a covering unique games conjecture, introduced by Dinur and Kol, we show that it is hard to approximate the covering number within any constant factor. Our
+    generalization yields a complete characterization of CSPs over
+    constant sized alphabet $\Sigma$ that are hard to cover since CSPs
+    over odd predicates are trivially coverable with $|\Sigma|$
+    assignments.   <br/> - For a large class of predicates that are contained in the
+    $2k$-LIN predicate, we show that it is quasi-NP-hard to
+    distinguish between instances which have covering number at most
+    two and covering number at least $\Omega(\log\log n)$. This
+    generalizes the $4$-LIN result of Dinur and Kol that states it
+    is quasi-NP-hard to distinguish between $4$-LIN-CSP instances
+    which have covering number at most two and covering number at
+    least $\Omega(\log \log\log n)$.
     </div>
     <div class="Card-bottom">
+<<<<<<< HEAD
          <a href="http://arxiv.org/abs/1411.7747">BHV14</a>  <a href="https://www.dropbox.com/s/qmhr7vpbivce0ha/slides.pdf?dl=0">Slides</a>
+=======
+         <span>BHV14: <a href="http://arxiv.org/abs/1411.7747">arXiv</a></span>
+         <span><a href="https://www.dropbox.com/s/qmhr7vpbivce0ha/slides.pdf?dl=0">slides</a></span>
+>>>>>>> polymer
     </div>
 </div>
-</div>
+</paper-shadow>
 
+<<<<<<< HEAD
 <div class="Card-container">    
 <h3>Game Theory</h3>
 <span style="display: block; text-align: center"> <a> ~</a> </span><br/>
 <div class="Card Card-nopic Shadow--z1">
+=======
+
+<div class="Field-container" id="Game-theory">    
+<h3>Game Theory</h3>
+<span class="links">~</span>
+<paper-shadow class="card nopic">
+>>>>>>> polymer
     <div class="Card-heading">
     	<span>Playing games in an uncertain world</span>
 	</div>
     <div class="Card-caption">
-        January, 2014
+         <span>January, 2014 </span>
 	</div>
 	<div class="Card-lower">
+	<span class="coauthors">Joint work with Manoj Gopalkrishnan [GV14].</span> 
 Traditional game theory assumes that the players in the game are aware of the rules of the game. However, in practice, often the players are unaware or have only partial knowledge about the game they are playing. They may also have knowledge that other players have only partial knowledge of the game they are playing, which they can try to exploit. We present a novel mathematical formulation of such games. We make use of Kripke semantics, which are a way to keep track of what different players know and do not know about the world. We propose a notion of equilibrium for such games, and show that equilibrium always exists.
       </div>
 	<div class="Card-bottom">
-       <a href="http://arxiv.org/abs/1402.4570">GV14</a>
+       <span>GV14: <a href="http://arxiv.org/abs/1402.4570">arXiv</a></span>
     </div>
 </div>
-</div>  
+</paper-shadow>
 
-<div class="Card-container">    
+<div class="Field-container" id="Bio">    
 <h3>Biological Systems<br/> that Compute</h3>
+<<<<<<< HEAD
 <span style="display: block; text-align: center"><a href="https://www.youtube.com/watch?v=czk4xgdhdY4">youtube</a> | <a href="https://www.dropbox.com/s/7yuhzouma6r7j0n/Natural%20Algorithms.docx?dl=0">popular science</a> | <a href="http://rjlipton.wordpress.com/2012/01/17/its-still-the-slime-mold-story/">Lipton's Blog</a> </span><br/>
 <div class="Card Shadow--z1">
+=======
+<span class="links"><a href="https://www.youtube.com/watch?v=czk4xgdhdY4">youtube</a> | <a href="https://www.dropbox.com/s/7yuhzouma6r7j0n/Natural%20Algorithms.docx?dl=0">popular science</a> | <a href="http://rjlipton.wordpress.com/2012/01/17/its-still-the-slime-mold-story/">Lipton's Blog</a> </span>
+<paper-shadow class="card">
+>>>>>>> polymer
     <div class="Card-heading">
     	<span>Physarum can compute shortest paths</span>
 	</div>
     <div class="Card-caption">
-        March, 2011
+         <span>March, 2011 </span>
 	</div>
 	<div class="Card-imgContainer">
 		<img src="/images/highlight/physarum_maze.png">
     </div>
 	<div class="Card-lower">
+		<span class="coauthors">Joint work with Vincenzo Bonifaci and 
+Kurt Mehlhorn [BMV12].</span> 
 Physarum or slime
 mold is a fungi. Researchers observed that it
  has fascinating computational capabilities like solving a
 maze, even without a central coordination mechanism. They
 modeled the creature grown in a maze with food at end points, as a
 flow of fluid over a graph of tubes, with time varying diameters.
-The model can be implemented in a highly distributed fashion 
-as the rules for varying the diameters are local.
 Simulations of this model revealed that the diameters of tubes along
-the shortest paths converged to 1 and the rest to 0.  I have
- worked with Vincenzo Bonifaci and 
-Kurt Mehlhorn on proving these convergence results formally for all graphs. We
+the shortest paths converged to 1 and the rest to 0.  We prove these convergence results formally for all graphs. We
 used tools from electrical network and network flow theory
  to show exponential rate of convergence for a large class of
-graphs to the shortest path. 
+graphs. 
       </div>
 	<div class="Card-bottom">
+<<<<<<< HEAD
       <a href="http://arxiv.org/abs/1106.0423">BMV11</a>  <a href="https://www.youtube.com/watch?v=czk4xgdhdY4">Youtube</a>           <a href="http://rjlipton.wordpress.com/2012/01/17/its-still-the-slime-mold-story/">Lipton's Blog</a>
+=======
+       <span>BMV12:  <a href="http://arxiv.org/abs/1106.0423">arXiv</a> |  <a href="http://dl.acm.org/citation.cfm?id=2095137">SODA'12</a> |  <a href="http://www.sciencedirect.com/science/article/pii/S0022519312003049">JTB</a></span>
+>>>>>>> polymer
     </div>
 </div>
-</div>  
+</paper-shadow>
 
 
-<div class="Card-container">
+<div class="Field-container" id="Streaming">
 <h3>Streaming <br/>Algorithms</h3>
+<<<<<<< HEAD
 <span style="display: block; text-align: center"> <a> ~</a> </span><br/>
 <div class="Card Card-nopic Shadow--z1">
+=======
+<span class="links">~</span>
+<paper-shadow class="card nopic">
+>>>>>>> polymer
 
 	<div class="Card-heading">
     	<span>Streaming algorithms for language recognition problems</span>
     </div>
     <div class="Card-caption">
-        2010
+         <span>2010 </span>
     </div>
     <div class="Card-lower">
+    		<span class="coauthors">Joint work with  Ajesh Babu, Nutan Limaye and
+Jaikumar Radhakrishnan [BLRV13].</span> 
 Streaming algorithms are motivated by
 situations where the input data is huge and is read in an online
 fashion. The efficiency of algorithms is measured with respect to the
-space used. In  joint work with Ajesh Babu, Nutan Limaye and
-Jaikumar Radhakrishnan, we studied streaming algorithms for checking whether an
+space used. We study streaming algorithms for checking whether an
 input string(of length $n$) can be parsed in a fixed context free
 grammar. Even for simple grammars, one can prove that deterministic
 algorithms cannot do anything better than storing the entire input.
 Using the technique of fingerprinting, we gave a randomized
 streaming algorithm that uses only $\log n$ space, for a sub-class
-of context free grammars [BLRV13]. We also showed that for simple
+of context free grammars. We also showed that for simple
 grammars outside this class, any
 randomized algorithm will require $\Omega(n)$ space. Furthermore we gave an $O(\log n)$ space
 randomized streaming algorithm for checking degree sequence of a
@@ -152,10 +210,14 @@ graphs~(where $n$ is the number of vertices), and prove that it is
 optimal in its space usage.
     </div>
     <div class="Card-bottom">
+<<<<<<< HEAD
          <a href="http://arxiv.org/abs/1104.0848">BLRV13</a>          <a href="https://www.dropbox.com/s/j7p2enoptwzky25/slides.pdf?dl=0">Slides</a> 
+=======
+         <span>BLRV13: <a href="http://arxiv.org/abs/1104.0848">arXiv</a> | <a href="http://link.springer.com/chapter/10.1007%2F978-3-642-13562-0_10">TAMC'10</a> | <a href="http://www.sciencedirect.com/science/article/pii/S0304397512011437">TCS</a> | <a href="https://www.dropbox.com/s/j7p2enoptwzky25/slides.pdf?dl=0">slides </a></span>
+>>>>>>> polymer
     </div>
 </div>
-</div>
+</paper-shadow>
 
 
 
